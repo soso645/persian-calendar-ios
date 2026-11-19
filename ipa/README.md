@@ -57,3 +57,10 @@ unzip -l PersianCalendar.ipa | head
 unzip -p PersianCalendar.ipa Payload/PersianCalendar.app/Info.plist > /tmp/Info.plist
 plutil -p /tmp/Info.plist
 ```
+
+## Licence
+
+The app is **GPL-3.0-or-later**, inherited from the upstream Android Persian Calendar (v10.2.0).
+This IPA contains that licensed code, so passing it on carries the same obligations: the licence
+and the corresponding source. The vendored Astronomy Engine is MIT. See
+[`../ATTRIBUTION.md`](../ATTRIBUTION.md) and [`../LICENSE`](../LICENSE) for the details.
