@@ -1,5 +1,10 @@
 import Foundation
 
+/// Where the calendar's day numbers meet the astronomy engine's time stamps.
+///
+/// Calendar code speaks in Julian day numbers, while the engine counts milliseconds since the Unix
+/// epoch. These helpers convert between the two at local midnight (or a chosen hour), optionally
+/// pinned to Iran's time zone for the settings that display Iranian time.
 extension Jdn {
     /// The moment at `hourOfDay` local time on this day, as an astronomy timestamp.
     ///
